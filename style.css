@@ -1,0 +1,57 @@
+/* Основной стиль страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер активации */
+.activation-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.activation-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Генератор случайных чисел (добавьте стили в соответствии с вашим предпочтением) */
+.generator-container {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.generator-form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Дополнительные стили для чекбоксов */
+.checkbox-row {
+    display: flex;
+    align-items: center;
+}
+
+/* Сдвиг чекбоксов и текста на 150px вправо и уменьшение расстояния между ними до 15px вправо */
+.checkbox-row .checkbox-label {
+    margin-left: 150px;
+}
+
+.checkbox-row input[type="checkbox"] {
+    margin-right: 15px;
+}
+
+/* Дополнительные стили, по вашему усмотрению */
+.activation-form input,
+.generator-form input {
+    margin-bottom: 20px;
+}
