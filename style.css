@@ -43,10 +43,12 @@ body {
 
 /* Сдвиг чекбоксов и текста на 150px вправо и уменьшение расстояния между ними до 15px вправо */
 .checkbox-row .checkbox-label {
-    margin-left: 150px;
+    margin-left: auto;
+    margin-right: 15px;
 }
 
 .checkbox-row input[type="checkbox"] {
+    margin-left: 0;
     margin-right: 15px;
 }
 
@@ -70,4 +72,23 @@ body {
     }
 
     /* Другие изменения стилей, по вашему усмотрению */
+}
+
+/* Исправления для чекбоксов */
+@media only screen and (max-width: 600px) {
+    .checkbox-row .checkbox-label {
+        margin-left: auto;
+        margin-right: 15px;
+    }
+
+    .checkbox-row input[type="checkbox"] {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+
+/* Стиль кнопок и чекбоксов при наведении курсора */
+.btn:hover,
+.form-check-input:hover {
+    cursor: pointer;
 }

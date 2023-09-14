@@ -59,8 +59,16 @@ document.getElementById("copy-button").addEventListener("click", function () {
         tempInput.value = resultText;
         document.body.appendChild(tempInput);
         tempInput.select();
-        document.execCommand("copy");
-        document.body.removeChild(tempInput);
-        alert("Результат скопирован в буфер обмена: " + resultText);
+        try {
+            document.execCommand("copy");
+            alert("Результат скопирован в буфер обмена: " + resultText);
+        } catch (err) {
+            console.error("Копирование не удалось: ", err);
+            alert("Копирование не удалось. Пожалуйста, скопируйте вручную.");
+        } finally {
+            document.body.removeChild(tempInput);
+        }
+    } else {
+        alert("Сгенерируйте результат для копирования пожалуйста!");
     }
 });
