@@ -18,6 +18,8 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Добавим максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
 }
 
 /* Генератор случайных чисел (добавьте стили в соответствии с вашим предпочтением) */
@@ -33,25 +35,54 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Добавим максимальную ширину контейнера */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
 }
 
 /* Дополнительные стили для чекбоксов */
 .checkbox-row {
     display: flex;
     align-items: center;
+    justify-content: center; /* Центрируем чекбоксы по горизонтали */
+    margin-top: 10px; /* Уменьшим отступ сверху */
 }
 
-/* Сдвиг чекбоксов и текста на 150px вправо и уменьшение расстояния между ними до 15px вправо */
+/* Уменьшение расстояния между чекбоксами и текстом */
 .checkbox-row .checkbox-label {
-    margin-left: 150px;
+    margin-left: 10px; /* Уменьшим отступ слева */
 }
 
 .checkbox-row input[type="checkbox"] {
-    margin-right: 15px;
+    margin-right: 5px; /* Уменьшим отступ справа */
 }
 
 /* Дополнительные стили, по вашему усмотрению */
 .activation-form input,
 .generator-form input {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Уменьшим отступ снизу */
+}
+
+/* Медиа-запрос для мобильных устройств с шириной экрана до 768px */
+@media (max-width: 768px) {
+    .activation-container {
+        margin-top: 20px; /* Уменьшим отступ сверху для контейнера активации */
+    }
+
+    .activation-form,
+    .generator-form {
+        padding: 10px; /* Уменьшим внутренний отступ форм */
+    }
+
+    .checkbox-row {
+        margin-top: 5px; /* Уменьшим отступ сверху для строки чекбоксов */
+    }
+
+    .checkbox-row .checkbox-label {
+        margin-left: 5px; /* Уменьшим отступ слева для текста чекбоксов */
+    }
+
+    .activation-form input,
+    .generator-form input {
+        margin-bottom: 5px; /* Уменьшим отступ снизу для инпутов */
+    }
 }
