@@ -87,8 +87,18 @@ body {
     }
 }
 
-/* Стиль кнопок и чекбоксов при наведении курсора */
-.btn:hover,
-.form-check-input:hover {
-    cursor: pointer;
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для кнопок */
+#copy-button, #reset-button {
+    margin: 5px; /* Отступ между кнопками */
+}
+
+#copy-button {
+    margin-bottom: 5px; /* Отступ снизу */
+    margin-top: -5px; /* Подвигаем кнопку вверх на 5px */
 }
